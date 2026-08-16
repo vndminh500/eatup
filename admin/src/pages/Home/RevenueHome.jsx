@@ -367,7 +367,7 @@ const RevenueHome = ({ url, token, canReadOrders = false }) => {
                   {`${lineDetails.deltaPercent >= 0 ? "+" : ""}${lineDetails.deltaPercent.toFixed(1)}%`}
                 </strong>
                 <small>
-                  {lineDetails.first?.label || "-"} -> {lineDetails.last?.label || "-"}
+                  {lineDetails.first?.label || "-"} {"->"} {lineDetails.last?.label || "-"}
                 </small>
               </div>
             </div>
